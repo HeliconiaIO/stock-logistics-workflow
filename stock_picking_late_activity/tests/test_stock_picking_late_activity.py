@@ -7,7 +7,7 @@ from odoo.tests import Form, common, tagged
 
 
 @tagged("post_install", "-at_install")
-class TestStockPickingLateActivity(common.SavepointCase):
+class TestStockPickingLateActivity(common.TransactionCase):
     @classmethod
     def setUpClass(cls):
         super(TestStockPickingLateActivity, cls).setUpClass()
@@ -40,8 +40,8 @@ class TestStockPickingLateActivity(common.SavepointCase):
             cls.partner, cls.picking_type, cls.product, scheduled_date
         )
         cls.picking_1.action_confirm()
-        product_qty = cls.picking_1.move_lines.product_uom_qty
-        cls.picking_1.move_lines.quantity_done = product_qty
+        product_qty = cls.picking_1.move_ids.product_uom_qty
+        cls.picking_1.move_ids.quantity_done = product_qty
         cls.picking_1.button_validate()
         # Create three more pickings. One of them with 'scheduled_date' before
         # current datetime
