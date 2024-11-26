@@ -13,5 +13,6 @@ class StockPickingType(models.Model):
         "their planned date.",
     )
     late_picking_activity_user_id = fields.Many2one(
-        comodel_name="res.users", string="Late picking activity responsible",
+        comodel_name="res.users",
+        string="Late picking activity responsible",
     )
