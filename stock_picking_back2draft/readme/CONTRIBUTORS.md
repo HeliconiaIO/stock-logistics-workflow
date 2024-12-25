@@ -3,3 +3,4 @@
 - Pimolnat Suntian \<<pimolnats@ecosoft.co.th>\>
 - David Montull Guasch \<<david.montull@bt-group.com>\>
 - Marwan Behillil \<<marwan@riluxa.com>\>
+- `Heliconia Solutions Pvt. Ltd. <https://www.heliconia.io>`_
