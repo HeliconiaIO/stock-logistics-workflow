@@ -4,3 +4,4 @@
 - [Tecnativa](https://www.tecnativa.com):
   - Víctor Martínez
 - Dhara Solanki \<<dhara.solanki@initos.com>\>
+- `Heliconia Solutions Pvt. Ltd. <https://www.heliconia.io>`_
