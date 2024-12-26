@@ -20,7 +20,7 @@ class TestStockPickingPurchaseOrderLink(TransactionCase):
         self.product = self.product_product_obj.create(
             {
                 "name": "product_template_obj - Test",
-                "type": "product",
+                # "type": "product",
                 "standard_price": 100.00,
             }
         )
