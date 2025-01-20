@@ -14,7 +14,7 @@ class StockPickingNote(models.Model):
     name = fields.Text(required=True)
     active = fields.Boolean(default=True)
     note_type_id = fields.Many2one("stock.picking.note.type", required=True)
-    sequence = sequence = fields.Integer(related="note_type_id.sequence", store=True)
+    sequence = fields.Integer(related="note_type_id.sequence", store=True)
 
     def write(self, vals):
         self.check_note_already_in_use()
